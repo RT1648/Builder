@@ -4,7 +4,7 @@ env:
     LOCALMANIFEST: https://github.com/RT1648/local_manifest-fleurprebuilt.git #Enter device local_manifest link & make sure all the neccessary repos are available in your localmanifest
     MAKEFILENAME: evolution_fleur #Enter makefile name example-aosp_fleur,etc...
     VARIENT: userdebug #Enter build varient among these - eng,user & userdebug
-    EXTRACMD: #rm -rf system/sepolicy/vendor/hal_fingerprint_default.te && rm -rf system/sepolicy/vendor/hal_health_default.te && rm -rf system/sepolicy/vendor/rild.te && rm -rf system/sepolicy/vendor/hal_light_default.te && rm -rf system/sepolicy/vendor/mediacodec.te #If u want run any cmd just before starting build
+    EXTRACMD: rm -rf system/sepolicy/vendor/hal_fingerprint_default.te hal_health_default.te rild.te hal_light_default.te mediacodec.te #If u want run any cmd just before starting build
     TARGET: mka evolution #Enter target example- m bacon, make bacon , mka bacon,etc...
     F: ci:ci #Your Gdrive Folder Path which u have set in rclone
     E: ENCRYPTED[7fd6a1a2996b87cf9c241e03d5fcd275b30396787b1b31ba2f062c716b52f8bae8a9f8b44e5f2a3bcc879ba76a61486f] #Encrypted id which u obtained from cirrusci after encrypting your rclone values

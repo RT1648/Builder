@@ -9,7 +9,7 @@ ccache -M 50G
 ccache -o compression=true
 ccache -z
 $EXTRACMD
-$TARGET & sleep 95m #|| curl --upload-file ./out/error.log https://free.keep.sh > link.txt && cat link.txt
+$TARGET
 }
 echo "Initializing Build System"
 build

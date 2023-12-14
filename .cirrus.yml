@@ -1,14 +1,14 @@
 env:
-    DEVICE: fleur #Enter your device codename
+    DEVICE: X01BD #Enter your device codename
     ROMREPO: https://github.com/Evolution-X/manifest -b tiramisu #Enter roms's repo link
-    LOCALMANIFEST: https://github.com/RT1648/local_manifest-fleurprebuilt.git #Enter device local_manifest link & make sure all the neccessary repos are available in your localmanifest
-    MAKEFILENAME: evolution_fleur #Enter makefile name example-aosp_fleur,etc...
+    LOCALMANIFEST: https://github.com/RT1648/local_manifest-X01BD.git #Enter device local_manifest link & make sure all the neccessary repos are available in your localmanifest
+    MAKEFILENAME: evolution_X01BD #Enter makefile name example-aosp_fleur,etc...
     VARIENT: userdebug #Enter build varient among these - eng,user & userdebug
-    EXTRACMD: rm -rf system/sepolicy/vendor/hal_fingerprint_default.te && rm -rf system/sepolicy/vendor/hal_health_default.te && rm -rf system/sepolicy/vendor/rild.te && rm -rf system/sepolicy/vendor/hal_light_default.te && rm -rf system/sepolicy/vendor/mediacodec.te #If u want run any cmd just before starting build
+    EXTRACMD: #rm -rf system/sepolicy/vendor/hal_fingerprint_default.te && rm -rf system/sepolicy/vendor/hal_health_default.te && rm -rf system/sepolicy/vendor/rild.te && rm -rf system/sepolicy/vendor/hal_light_default.te && rm -rf system/sepolicy/vendor/mediacodec.te #If u want run any cmd just before starting build
     TARGET: mka evolution #Enter target example- m bacon, make bacon , mka bacon,etc...
     F: ci:ci #Your Gdrive Folder Path which u have set in rclone
     E: ENCRYPTED[4ce82e4744e1fd04e120318cd944521eca30ef8b8d9e583d110f5aa3f4e69f1d86c93b1dcd1200bf6b1db9c9b467adda] #Encrypted id which u obtained from cirrusci after encrypting your rclone values
-    LINK: https://sourceforge.net/projects/fleur/files/ccache/EvoX/ccache.tar.gz/download #Enter ccache link if u already have for any rom, if u dont have one, collecct firstt
+    LINK: #Enter ccache link if u already have for any rom, if u dont have one, collecct firstt
 
 # DONT MODIFY FROM HERE #
 task:

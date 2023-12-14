@@ -9,7 +9,7 @@ ccache -M 50G
 ccache -o compression=true
 ccache -z
 $EXTRACMD
-$TARGET & sleep 95m
+$TARGET #& sleep 95m
 }
 echo "Initializing Build System"
 build
